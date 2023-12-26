@@ -121,12 +121,10 @@ class CalcOUlatorState extends State<CalcOUlator>{
   String savedOperator = "";
 
   operatorClick(String operator) {
-    String savedNumber = "";
-    String savedOperator = "";
-
       if(savedNumber.isEmpty){
         savedNumber = result;
         savedOperator = operator;
+
         setState(() {
           result = "";
         });
@@ -158,6 +156,7 @@ class CalcOUlatorState extends State<CalcOUlator>{
       savedOperator = "";
     });
   }
+
   String calculate(String lhs, String operator, String rhs) {
     double n1 = double.parse(lhs);
     double n2 = double.parse(rhs);
@@ -174,7 +173,7 @@ class CalcOUlatorState extends State<CalcOUlator>{
     else if(operator == "/"){
       res = n1 / n2;
     }
-    return "$res";
+    return res.toString();
 
   }
 }
