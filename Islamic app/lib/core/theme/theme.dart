@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class ApplicationTheme{
   static ThemeData lightTheme = ThemeData(
-    primaryColor: Color(0xFFB7935F),
+    primaryColor: const Color(0xFFB7935F),
       appBarTheme: AppBarTheme(
           elevation: 0.0,
           backgroundColor: Colors.transparent,
@@ -13,7 +13,7 @@ class ApplicationTheme{
             fontWeight: FontWeight.bold,
           )
       ),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      bottomNavigationBarTheme:const BottomNavigationBarThemeData(
         backgroundColor: Color(0xFFB7935F),
         type: BottomNavigationBarType.fixed,
         selectedIconTheme: IconThemeData(
@@ -26,6 +26,28 @@ class ApplicationTheme{
           color: Colors.white,
         ),
         unselectedItemColor: Colors.white,
+      ),
+      textTheme: TextTheme(
+        titleLarge: GoogleFonts.elMessiri(
+          color: Colors.black,
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+        ),
+        bodyLarge: GoogleFonts.elMessiri(
+          color: Colors.black,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),
+        bodyMedium: GoogleFonts.elMessiri(
+          color: Colors.black,
+          fontSize: 25,
+          fontWeight: FontWeight.w500
+        ),
+        bodySmall: GoogleFonts.elMessiri(
+          color: Colors.black,
+          fontSize: 18,
+
+        ),
       ),
   );
   static ThemeData darkTheme = ThemeData(
