@@ -5,6 +5,9 @@ class ApplicationTheme{
   static ThemeData lightTheme = ThemeData(
     primaryColor: const Color(0xFFB7935F),
       appBarTheme: AppBarTheme(
+        iconTheme: IconThemeData(
+          color: Color(0xFFB7935F),
+        ),
           elevation: 0.0,
           backgroundColor: Colors.transparent,
           titleTextStyle: GoogleFonts.elMessiri(
@@ -43,9 +46,10 @@ class ApplicationTheme{
           fontSize: 25,
           fontWeight: FontWeight.w500
         ),
-        bodySmall: GoogleFonts.elMessiri(
+        bodySmall: GoogleFonts.inter(
           color: Colors.black,
-          fontSize: 18,
+          fontSize: 22,
+          fontWeight: FontWeight.w500
 
         ),
       ),

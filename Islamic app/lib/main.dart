@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:islamic_app/core/theme/theme.dart';
 import 'package:islamic_app/layout/home_layout.dart';
+import 'package:islamic_app/modules/quraan/Quraan_details.dart';
 import 'package:islamic_app/modules/splash_screen.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class IslamyApp extends StatelessWidget{
         routes: {
           splashScreen.routeName: (context) => splashScreen(),
           HomeLayout.routeName: (context) => HomeLayout(),
-
+          QuraanDetails.routeName: (context) => QuraanDetails(),
         },
       );
   }
