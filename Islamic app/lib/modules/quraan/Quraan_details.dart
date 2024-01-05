@@ -38,16 +38,16 @@ class _QuraanDetailsState extends State<QuraanDetails> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(" سورة ${args.suraName}",
-                        style: theme.textTheme.bodyLarge),
                     Padding(
-                      padding: const EdgeInsets.only(left: 3.0, bottom: 1.0),
+                      padding: const EdgeInsets.only(left: 3.0, bottom: 2.0),
                       child: Icon(
                         Icons.play_circle,
                         color: theme.primaryColor,
                         size: 30,
                       ),
                     ),
+                    Text(" سورة ${args.suraName}",
+                        style: theme.textTheme.bodyLarge),
                   ],
                 ),
                 Divider(
@@ -55,6 +55,7 @@ class _QuraanDetailsState extends State<QuraanDetails> {
                   thickness: 3,
                   indent: 50,
                   endIndent: 50,
+                  height: 0,
                 ),
                 Expanded(
                     child: ListView.builder(
